@@ -13,6 +13,10 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
