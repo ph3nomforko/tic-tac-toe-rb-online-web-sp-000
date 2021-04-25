@@ -26,7 +26,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, char)
-  board[index] = char
+  char = board[index]
 end
 
 def valid_move?(board, index)
