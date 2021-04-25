@@ -25,8 +25,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(array, index, char = "X")
-  array[index] = char
+def move(board, index, current_player = "X")
+  board[index] = current_player
 end
 
 def valid_move?(board, index)
