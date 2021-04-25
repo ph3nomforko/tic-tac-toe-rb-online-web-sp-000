@@ -29,6 +29,14 @@ def move(array, index, char = "X")
   array[index] = char
 end
 
+def valid_move?(board, index)
+  if index.between?(0, 8) && position_taken?(board, index) == false
+    return true
+  elsif position_taken?(board, index) == true
+    return false
+  end
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
