@@ -26,7 +26,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, "X")
-  board[index] = current_player
+  current_player(board)
 end
 
 def valid_move?(board, index)
